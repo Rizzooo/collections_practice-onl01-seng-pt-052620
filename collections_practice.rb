@@ -43,13 +43,13 @@ def sum_array(nums)
 end
 
 def add_s(final)
-  final.each_with_index.collect { |element, index|
+  final.each_with_index.collect do |element, index|
     if index == 1 
       element
     else
       element + "s"
-  }
-  final
+    end
+  end
 end
   
   
